@@ -784,6 +784,7 @@ h1 img{
 			justify-content: space-between;
 			align-items: center;
 			font-size: medium;
+			background-image: linear-gradient(to right, #eeddd6 , #ae7f6e);
 		}
 		nav ul{
 			list-style: none;
@@ -811,9 +812,20 @@ h1 img{
 				display: block;
 			}
 				
-		h1 img{
-			width: 100%;
-			height: 40rem;
+		@keyframes headerAnimate{
+			0%{background-image: url(../img/modelos3.JPG)}
+			25%{background-image: url(../img/modelos4.png)}
+			50%{background-image: url(../img/modelos5.jpg)}
+			75%{background-image: url(../img/modelos6.png)}
+			100%{background-image: url(../img/modelos7.png)}
+		}
+
+		header{
+			height: 20rem;
+			background-size: cover;
+			animation-name: headerAnimate;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
 		}
 		#mostwanted h2{
 			text-align: center;
@@ -1422,6 +1434,13 @@ h1 img{
 	 	border: 2px solid #333;
 	 	border-color: #dacbc4;
 	 	color: #dacbc4;
+	 	transition: all 2s;
+	}
+	input[type="submit"]:hover{
+		background: linear-gradient(to bottom, #825848 , #d2a492);
+		cursor: pointer;
+		color: black;
+		border-color: #beb0aa;
 	}
 	select{
 		background-color: #dacbc4;
