@@ -1360,29 +1360,32 @@ h1 img{
 		#skincare .spf p.price{
 			font-size: 1.2rem;
 		}
-	h1{
+	#about h1{
 		text-align: left;
 		font-size: 3rem;
 	}
-	h2{
+	#about h2{
 		text-align: right;
 		font-size: 2.5rem;
 	}
-	p{
+	#about p{
 		font-size: 95%;
 		line-height: 30px;
 		font-weight: 550;
 	}
-	h1 p{
+	#about h1 p{
 		text-align: left;
 	}
-	h2 p{
+	#about h2 p{
 		text-align: right;
 	}
-	h1{
+	#contacto h1{
 		text-align: left;
 	}
-	img{
+
+	
+	
+	#contacto img{
 		align-items: left;
 	}
 	form {
