@@ -869,6 +869,9 @@ h1 img{
 			grid-template-columns: 25% 44% 25%;
 			grid-template-areas: "img1 texto img2";
 		}
+		.section:hover{
+			background-color: #a37667;
+		}
 
 		#img1{
 			grid-area: img1;
@@ -1382,11 +1385,18 @@ h1 img{
 	#contacto h1{
 		text-align: left;
 	}
-
-	
-	
+	#contacto p:hover{
+		background-color: #8a6052;
+		text-decoration: bold;
+		font-weight: 600;
+	}
 	#contacto img{
 		align-items: left;
+		transition: 2s;
+	}
+	#contacto img:hover{
+		height: 3rem;
+		width: 6rem;
 	}
 	form {
 	  box-sizing: unset;
