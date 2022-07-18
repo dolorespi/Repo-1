@@ -820,7 +820,7 @@ h1 img{
 			100%{background-image: url(../img/modelos7.png)}
 		}
 
-		header{
+		.header{
 			height: 20rem;
 			background-size: cover;
 			animation-name: headerAnimate;
@@ -868,6 +868,9 @@ h1 img{
 		.section{
 			grid-template-columns: 25% 44% 25%;
 			grid-template-areas: "img1 texto img2";
+		}
+		.section:hover{
+			background-color: #a37667;
 		}
 
 		#img1{
@@ -1360,30 +1363,40 @@ h1 img{
 		#skincare .spf p.price{
 			font-size: 1.2rem;
 		}
-	h1{
+	#about h1{
 		text-align: left;
 		font-size: 3rem;
 	}
-	h2{
+	#about h2{
 		text-align: right;
 		font-size: 2.5rem;
 	}
-	p{
+	#about p{
 		font-size: 95%;
 		line-height: 30px;
 		font-weight: 550;
 	}
-	h1 p{
+	#about h1 p{
 		text-align: left;
 	}
-	h2 p{
+	#about h2 p{
 		text-align: right;
 	}
-	h1{
+	#contacto h1{
 		text-align: left;
 	}
-	img{
+	#contacto p:hover{
+		background-color: #8a6052;
+		text-decoration: bold;
+		font-weight: 600;
+	}
+	#contacto img{
 		align-items: left;
+		transition: 2s;
+	}
+	#contacto img:hover{
+		height: 3rem;
+		width: 6rem;
 	}
 	form {
 	  box-sizing: unset;
