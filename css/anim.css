@@ -1,0 +1,1448 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
+html{
+	background-color: #eeddd6;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2rem;
+}
+nav{
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	font-size: medium;
+}
+	nav a img{
+		width: 30vw;
+	}
+	nav ul{
+		list-style: none;
+		display: list-item;
+		font-size: 1rem;
+	}
+		nav ul li{	
+			list-style: none;
+			margin-right: 20px;
+			position: relative;
+		}
+			nav ul li a{
+				color: #d5b5a6;
+				text-decoration: none;
+				font-weight: 650;
+			}	
+			nav ul li a:hover{
+				color: #805646;				
+			}
+			nav ul ul{
+				position: absolute;
+				display: none;
+			}
+			nav ul li:hover ul{
+				display: block;
+			}
+h1 img{
+	width: 100%;
+	height: auto;	
+}
+#mostwanted h2{
+	text-align: center;
+	font-size: 1.5rem;
+}
+#mostwanted.box{
+		width: 70vw;
+		height: 50vh;
+	}
+	#mostwanted .box .products{
+		display: grid;
+		justify-content: space-between;
+		grid-template-columns: 10fr 10fr;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"img1 img2"
+		"img3 img4";
+	}
+		#mostwanted .products figure{
+			margin: 5px;
+			padding: 0;
+		}
+		#mostwanted .products figure figcaption{
+			font-size: .8rem;
+		}
+		#mostwanted .products figure p.price{
+			font-size: .8rem;
+		}
+
+.mw1{
+	grid-area: img1;
+}
+	.mw1 img{
+		width: 70vw;
+		height: 40vh;
+	}
+.mw2{
+	grid-area: img2;
+}
+	.mw2 img{
+		width: 70vw;
+		height: 40vh;
+	}
+.mw3{
+	grid-area: img3;
+}
+	.mw3 img{
+		width: 70vw;
+		height: 40vh;
+	}
+.mw4{
+	grid-area: img4;
+}
+	.mw4 img{
+		width: 70vw;
+		height: 40vh;
+	}
+.section{
+	display: grid;
+	width: 105vw;
+	background-color: #c7aa9a;
+	background-size: 100vw;
+	grid-template-columns: 10fr 10fr;
+	grid-template-rows: auto;
+	justify-items: space-around;
+	grid-template-areas: 
+	"img1 img2" 
+	"texto texto";
+}
+#img1{
+	grid-area: img1;
+}
+	#img1 img{
+		width: 50vw;
+		height: 30vh;
+	}
+#text-center{
+	grid-area: texto;
+}
+	#text-center h2{
+		text-align: center;
+		text-decoration: bold;
+	}
+	#text-center p{
+		text-align: center;
+	}
+#img2{
+	grid-area: img2;
+}
+	#img2 img{
+		width: 50vw;
+		height: 30vh;
+	}
+.footer{
+	margin: auto;
+	padding: auto;
+	width: 100%;
+	height: 100%;
+}
+	.footer h3{
+		text-align: center;
+		font-size: 1rem;
+	}
+	.footer ul{
+		list-style: none;
+		display: flex;
+		align-items: center;
+		padding-left: 4.5rem;
+	}
+	.footer ul li{
+		list-style: none;
+	}
+	.footer ul li img{
+		text-decoration: none;
+		width: 10vw;
+		height: 5vh;
+	}
+=============NEW==============
+#newitems{
+	width: 100%;
+}
+	#newitems .idem h2{
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	#newitems figure{
+		text-align: center;
+	}
+	#newitems figcaption{
+		font-size: 1rem;
+	}
+	#newitems p.price{
+		font-size: 1rem;
+	}
+	#newitems .face{
+		display: grid;
+		justify-content: space-between;
+		grid-template-columns: 5fr 5fr;
+		grid-template-areas: 
+		"face1 face2" 
+		"face3 face4";
+	}
+.face1{
+	grid-area: face1;
+}
+	.face1 img{
+		width: 50vw;
+		height: 30vh;
+	}
+.face2{
+	grid-area: face2;
+}
+	.face2 img{
+		width: 50vw;
+		height: 30vh;
+	}
+.face3{
+	grid-area: face3;
+}
+	.face3 img{
+		width: 50vw;
+		height: 30vh;
+	}
+.face4{
+	grid-area: face4;
+}
+	.face4 img{
+		width: 50vw;
+		height: 30vh;
+	}
+#newitems .lip{
+		margin: 5px;
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"lip1 lip2" 
+		"lip3 lip4";
+	}
+.lip1{
+	grid-area: lip1;
+}
+	.lip1 img{
+		width: 50vw;
+		height: 30vh;
+	}
+.lip2{
+	grid-area: lip2;
+}
+	.lip2 img{
+		width: 50vw;
+		height: 30vh;
+	}
+.lip3{
+	grid-area: lip3;
+}
+	.lip3 img{
+		width: 50vw;
+		height: 30vh;
+	}
+.lip4{
+	grid-area: lip4;
+}
+	.lip4 img{
+		width: 50vw;
+		height: 30vh;
+	}
+#newitems .skincare{
+		margin: 5px;
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"sk1 sk2" 
+		"sk3 sk4";
+	}
+.sk1{
+	grid-area: sk1;
+}
+	.sk1 img{
+		width: 50vw;
+		height: 30vh;
+	}
+.sk2{
+	grid-area: sk2;
+}
+	.sk2 img{
+		width: 50vw;
+		height: 30vh;
+	}
+.sk3{
+	grid-area: sk3;
+}
+	.sk3 img{
+		width: 50vw;
+		height: 30vh;
+	}
+=========shop============
+#shop{
+	width: 100%;	
+	height: 100%;
+	padding: 20px 10px;
+	margin: 2.5rem 1.5rem;
+}
+	#shop .link h2{
+		font-size: 1rem;
+		text-align: center;
+	}
+		#shop .link h2 a{
+			text-decoration: none;
+			color: black;
+		}
+	#shop .makeup{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+		#shop .makeup figure{
+			text-align: center;
+		}
+			#shop .makeup figure img{
+				width: 30vw;
+				height: 30vh;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#shop .makeup figcaption{
+			font-size: .7rem;
+			padding: 0px 0;
+		}
+		#shop .makeup p.price{
+			font-size: .7rem;
+		}
+	#shop .skin-care{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+		#shop .skin-care figure{
+			text-align: center;
+		}
+			#shop .skin-care figure img{
+				width: 30vw;
+				height: 30vh;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#shop .skin-care figcaption{
+			font-size: .7rem;
+			padding: 0px 0;
+		}
+		#shop .skin-care p.price{
+			font-size: .7rem;
+		}
+============makeup================
+#makeup{
+	width: 100%;	
+	height: 100%;
+}
+	#makeup .item h2{
+		text-align: center;
+		font-size: 1rem;
+	}
+	#makeup .foundation{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"f1 f2" 
+		"f3 f3";
+	}
+	#makeup figure{
+		text-align: center;
+	}
+
+	#makeup .foundation figure img{
+		width: 50vw;
+		height: 30vh;
+	}
+	#makeup .foundation figcaption{
+		font-size: .7rem;
+	}
+	#makeup .foundation p{
+		font-size: .7rem;
+	}
+
+	.f1{
+		grid-area: f1;
+	}
+	.f2{
+		grid-area: f2;
+	}
+	.f3{
+		grid-area: f3;
+	}
+
+	#makeup .concealer{
+			display: grid;
+			justify-content: space-between;
+			grid-template-areas: 
+			"c1 c2" 
+			"c3 c3";
+		}
+		#makeup .concealer figure img{
+			width: 50vw;
+			height: 30vh;
+		}
+		#makeup .concealer figcaption{
+			font-size: .7rem;
+		}
+		#makeup .concealer p{
+			font-size: .7rem;
+		}
+		
+		.c1{
+			grid-area: c1;
+		}
+		.c2{
+			grid-area: c2;
+		}
+		.c3{
+			grid-area: c3;
+		}
+
+	#makeup .blush{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"b1 b2" 
+		"b3 b3";
+	}
+	#makeup .blush figure img{
+		width: 50vw;
+		height: 30vh;
+	}
+	#makeup .blush figcaption{
+		font-size: .7rem;
+	}
+	#makeup .blush p{
+		font-size: .7rem;
+	}
+	
+	.b1{
+		grid-area: b1;
+	}
+	.b2{
+		grid-area: b2;
+	}
+	.b3{
+		grid-area: b3;
+	}
+
+	#makeup .contour{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"co1 co2" 
+		"co3 co3";
+	}
+	#makeup .contour figure img{
+		width: 50vw;
+		height: 30vh;
+	}
+	#makeup .contour figcaption{
+		font-size: .7rem;
+	}
+	#makeup .contour p{
+		font-size: .7rem;
+	}
+	
+	.co1{
+		grid-area: co1;
+	}
+	.co2{
+		grid-area: co2;
+	}
+	.co3{
+		grid-area: co3;
+	}
+
+	#makeup .powder{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"p1 p2" 
+		"p3 p3";
+	}
+	#makeup .powder figure img{
+		width: 50vw;
+		height: 30vh;
+	}
+	#makeup .powder figcaption{
+		font-size: .7rem;
+	}
+	#makeup .powder p{
+		font-size: .7rem;
+	}
+	
+	.p1{
+		grid-area: p1;
+	}
+	.p2{
+		grid-area: p2;
+	}
+	.p3{
+		grid-area: p3;
+	}
+	#makeup .lips{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"l1 l2" 
+		"l3 l3";
+	}
+	#makeup .lips figure img{
+		width: 50vw;
+		height: 30vh;
+	}
+	#makeup .lips figcaption{
+		font-size: .7rem;
+	}
+	#makeup .lips p{
+		font-size: .7rem;
+	}
+	
+	.l1{
+		grid-area: l1;
+	}
+	.l2{
+		grid-area: l2;
+	}
+	.l3{
+		grid-area: l3;
+	}
+	#makeup .primer{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"pr1 pr2" 
+		"pr3 pr3";
+	}
+	#makeup .primer figure img{
+		width: 50vw;
+		height: 30vh;
+	}
+	#makeup .primer figcaption{
+		font-size: .7rem;
+	}
+	#makeup .primer p{
+		font-size: .7rem;
+	}
+	
+	.pr1{
+		grid-area: pr1;
+	}
+	.pr2{
+		grid-area: pr2;
+	}
+	.pr3{
+		grid-area: pr3;
+	}
+	#makeup .brow{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"br1 br2" 
+		"br3 br3";
+	}
+	#makeup .brow figure img{
+		width: 50vw;
+		height: 30vh;
+	}
+	#makeup .brow figcaption{
+		font-size: .7rem;
+	}
+	#makeup .brow p{
+		font-size: .7rem;
+	}
+	
+	.br1{
+		grid-area: br1;
+	}
+	.br2{
+		grid-area: br2;
+	}
+	.br3{
+		grid-area: br3;
+	}
+	#makeup .eyes{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"e1 e2" 
+		"e3 e3";
+	}
+	#makeup .eyes figure img{
+		width: 50vw;
+		height: 30vh;
+	}
+	#makeup .eyes figcaption{
+		font-size: .7rem;
+	}
+	#makeup .eyes p{
+		font-size: .7rem;
+	}
+	
+	.e1{
+		grid-area: e1;
+	}
+	.e2{
+		grid-area: e2;
+	}
+	.e3{
+		grid-area: e3;
+	}
+	============skincare============0
+
+	#skincare{
+	width: 100%;	
+	height: 100%;
+}
+	#skincare .nxmes h2{
+		text-align: center;
+		font-size: 1rem;
+	}
+		#skincare figure{
+			text-align: center;
+		}
+			#skincare figure img{
+			width: 50vw;
+			height: 30vh;
+			}
+		#skincare figcaption{
+			font-size: .7rem;
+		}
+		#skincare  p.price{
+			font-size: .7rem;
+		}	
+	
+	#skincare .cleanser{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"cl1 cl2" 
+		"cl3 cl3";
+	}
+
+	.cl1{
+		grid-area: cl1;
+	}
+	.cl2{
+		grid-area: cl2;
+	}
+	.cl3{
+		grid-area: cl3;
+	}
+	#skincare .serum{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"s1 s2" 
+		"s3 s3";
+	}
+
+	.s1{
+		grid-area: s1;
+	}
+	.s2{
+		grid-area: s2;
+	}
+	.s3{
+		grid-area: s3;
+	}
+	#skincare .moisturizer{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"m1 m2" 
+		"m3 m3";
+	}
+
+	.m1{
+		grid-area: m1;
+	}
+	.m2{
+		grid-area: m2;
+	}
+	.m3{
+		grid-area: m3;
+	}
+	#skincare .spf{
+		display: grid;
+		justify-content: space-between;
+		grid-template-areas: 
+		"spf1 spf2" 
+		"spf3 spf3";
+	}
+
+	.spf1{
+		grid-area: spf1;
+	}
+	.spf2{
+		grid-area: spf2;
+	}
+	.spf3{
+		grid-area: spf3;
+	}
+	===========abput============
+	h1{
+		text-align: center;
+		font-size: 2rem;
+	}
+	h2{
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	p{
+		font-size: 70%;
+		line-height: 30px;
+		font-weight: 550;
+	}
+	h1 p{
+		text-align: center;
+	}
+	h2 p{
+		text-align: center;
+	}
+	==============forms=============
+	h1{
+		text-align: left;
+	}
+	img{
+		align-items: left;
+	}
+	p{
+
+	}
+	form {
+	  box-sizing: unset;
+	  padding: 2rem;
+	  border-radius: 1rem;
+	  background-color: rgba(130, 88, 72, 0.6); 
+	  display: list-item;
+	  gap: 2rem;
+	}
+	input,
+	select,
+	textarea {
+	  appearance: none;
+	  background-color: transparent;
+	  border: none;
+	  padding: 0;
+	  margin: 0;
+	  box-sizing: border-box;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="pasword"],
+	input[type="phone"],
+	select,
+	textarea {
+	  border: 2px solid #333;
+	  background-color: #dacbc4;
+	  border-radius: 0.25rem;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="pasword"],
+	select,
+	textarea {
+	  font: 1.25rem / 1.5 sans-serif;
+	  display: block;
+	  box-sizing: border-box;
+	  width: 100%;
+	  padding: 0.5rem 0.75rem;
+	}
+	input[type="submit"]{
+		display: unset;
+		height: 80%;
+		width: 50%;
+	 	box-sizing: border-box;
+	 	background-color: rgba(130, 88, 72, 0.6);
+	 	border-radius: 1rem;
+	 	border: 2px solid #333;
+	 	border-color: #dacbc4;
+	 	color: #dacbc4;
+	}
+	select{
+		background-color: #dacbc4;
+	}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
+		nav{
+			position: sticky;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: medium;
+			background-image: linear-gradient(to right, #eeddd6 , #ae7f6e);
+		}
+		nav ul{
+			list-style: none;
+			display: flex;
+			font-size: 1rem;
+		}
+			nav ul li{
+				list-style: none;
+				margin-right: 20px;
+				position: relative;
+			}
+				nav ul li a{
+					color: #d5b5a6;
+					text-decoration: none;
+					font-weight: 650;
+				}
+				nav ul li a:hover{
+					color: #805646;
+				}
+			nav ul ul{
+				position: absolute;
+				display: none;
+			}
+			nav ul li:hover ul{
+				display: block;
+			}
+				
+		@keyframes headerAnimate{
+			0%{background-image: url(../img/modelos3.JPG)}
+			25%{background-image: url(../img/modelos4.png)}
+			50%{background-image: url(../img/modelos5.jpg)}
+			75%{background-image: url(../img/modelos6.png)}
+			100%{background-image: url(../img/modelos7.png)}
+		}
+
+		.header{
+			height: 20rem;
+			background-size: cover;
+			animation-name: headerAnimate;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+		}
+		#mostwanted h2{
+			text-align: center;
+			font-size: 2.5rem;
+		}
+		#mostwanted.box{
+			width: 100%;
+			height: 100%;
+			padding: 20px 10px;
+			margin: 2.5rem 1.5rem;
+		}
+		#mostwanted .products{
+			margin: 5px;
+			display: flex;
+			justify-content: space-between;
+		}
+			#mostwanted .products figure{
+				text-align: center;
+			}
+			#mostwanted .products figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+			#mostwanted .products figure figcaption{
+				font-size: 1.2rem;
+				padding: 0px 0;
+			}
+			#mostwanted .products figure p.price{
+				font-size: 1.2rem;
+			}
+		.section{
+			width: 98vw;
+			display: grid;
+			margin-top: 3rem;	
+			background-color: #c7aa9a;
+			background-size: 98vw;
+		}
+		.section{
+			grid-template-columns: 25% 44% 25%;
+			grid-template-areas: "img1 texto img2";
+		}
+
+		#img1{
+			grid-area: img1;
+			padding: 1rem 1rem 0 1rem;
+		}	
+			#img1 img{
+				width: 30vw;
+				height: 50vh;
+			}
+		#text-center{
+			grid-area: texto;
+		}
+		#text-center h2{
+			text-align: center;
+			align-items: center;
+			text-decoration: bold;
+			padding-left: 3rem;
+		}
+		#text-center p{
+			text-align: center;
+			align-items: center;
+			align-content: bottom;
+			padding: .5rem .5rem .5rem 3rem;
+		}
+		#img2{
+			grid-area: img2;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+		#img2 img{
+				width: 30vw;
+				height: 50vh;
+			}
+
+		.footer{
+			margin: auto;
+			padding: auto;
+			width: 100%;
+			height: 100%;
+		}
+		.footer h3{
+			text-align: left;
+			font-size: 2rem;
+		}
+		.footer ul{
+			list-style: none;
+			display: flex;
+		}
+		.footer ul li{
+			list-style: none;
+		}
+		.footer ul li img{
+			text-decoration: none;
+			width: 95%;
+			height: 100%;
+		}
+		
+		#newitems{
+			width: 100%;	
+			height: 100%;
+			padding: 20px 10px;
+			margin: 2.5rem 1.5rem;
+		}
+		#newitems .idem h2{
+			text-align: center;
+			font-size: 2.5rem;
+		}
+		#newitems .face{
+			margin: 5px;
+			display: flex;
+			justify-content: space-between;
+		}
+			#newitems .face figure{
+				text-align: center;
+			}
+				#newitems .face figure img{
+					width: 100%;
+					height: 70%;
+					border-top-left-radius: 2px;
+					border-top-right-radius: 2px;
+				}
+				#newitems .face figure figcaption{
+					font-size: 1.2rem;
+					padding: 0px 0;
+				}
+				#newitems .face figure p.price{
+					font-size: 1.2rem;
+				}
+		#newitems .lip{
+			margin: 5px;
+			display: flex;
+			justify-content: space-between;
+		}
+			#newitems .lip figure{
+				text-align: center;
+			}
+				#newitems .lip figure img{
+					width: 100%;
+					height: 70%;
+					border-top-left-radius: 2px;
+					border-top-right-radius: 2px;
+				}
+				#newitems .lip figure figcaption{
+					font-size: 1.2rem;
+					padding: 0px 0;
+				}
+				#newitems .lip figure p.price{
+					font-size: 1.2rem;
+				}
+		#newitems .skincare{
+			margin: 5px;
+			display: flex;
+			justify-content: space-between;
+		}
+			#newitems .skincare figure{
+				text-align: center;
+			}
+				#newitems .skincare figure img{
+					width: 100%;
+					height: 70%;
+					border-top-left-radius: 2px;
+					border-top-right-radius: 2px;
+				}
+				#newitems .skincare figure figcaption{
+					font-size: 1.2rem;
+					padding: 0px 0;
+				}
+				#newitems .skincare figure p.price{
+					font-size: 1.2rem;
+				}
+
+	#shop{
+		width: 100%;	
+		height: 100%;
+		padding: 20px 10px;
+		margin: 2.5rem 1.5rem;
+	}
+	#shop .link h2{
+		font-size: 2rem;
+		text-align: center;
+	}
+		#shop .link h2 a{
+			text-decoration: none;
+			color: black;
+		}
+	#shop .makeup{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+		#shop .makeup figure{
+			text-align: center;
+		}
+			#shop .makeup figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#shop .makeup figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#shop .makeup p.price{
+			font-size: 1.2rem;
+		}
+	#shop .skin-care{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+		#shop .skin-care figure{
+			text-align: center;
+		}
+			#shop .skin-care figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#shop .skin-care figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#shop .skin-care p.price{
+			font-size: 1.2rem;
+		}
+	#makeup{
+		width: 100%;	
+		height: 100%;
+	}
+	#makeup .item h2{
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	#makeup .foundation{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .foundation figure{
+			text-align: center;
+		}
+			#makeup .foundation figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .foundation figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .foundation p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .concealer{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .concealer figure{
+			text-align: center;
+		}
+			#makeup .concealer figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .concealer figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .concealer p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .blush{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .blush figure{
+			text-align: center;
+		}
+			#makeup .blush figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .blush figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .blush p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .contour{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .contour figure{
+			text-align: center;
+		}
+			#makeup .contour figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .contour figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .contour p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .powder{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .powder figure{
+			text-align: center;
+		}
+			#makeup .powder figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .powder figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .powder p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .lips{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .lips figure{
+			text-align: center;
+		}
+			#makeup .lips figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .lips figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .lips p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .primer{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .primer figure{
+			text-align: center;
+		}
+			#makeup .primer figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .primer figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .primer p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .brow{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .brow figure{
+			text-align: center;
+		}
+			#makeup .brow figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .brow figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .brow p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .eyes{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .eyes figure{
+			text-align: center;
+		}
+			#makeup .eyes figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .eyes figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .eyes p.price{
+			font-size: 1.2rem;
+		}
+	#skincare{
+		width: 100%;	
+		height: 100%;
+		padding: 20px 10px;
+		margin: 2.5rem 1.5rem;
+	}
+	#skincare .nxmes h2{
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	#skincare .cleanser{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#skincare .cleanser figure{
+			text-align: center;
+		}
+			#skincare .cleanser figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#skincare .cleanser figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#skincare .cleanser p.price{
+			font-size: 1.2rem;
+		}	
+	#skincare .serum{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#skincare .serum figure{
+			text-align: center;
+		}
+			#skincare .serum figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#skincare .serum figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#skincare .serum p.price{
+			font-size: 1.2rem;
+		}
+	#skincare .moisturizer{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#skincare .moisturizer figure{
+			text-align: center;
+		}
+			#skincare .moisturizer figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#skincare .moisturizer figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#skincare .moisturizer p.price{
+			font-size: 1.2rem;
+		}
+	#skincare .spf{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#skincare .spf figure{
+			text-align: center;
+		}
+			#skincare .spf figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#skincare .spf figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#skincare .spf p.price{
+			font-size: 1.2rem;
+		}
+	h1{
+		text-align: left;
+		font-size: 3rem;
+	}
+	h2{
+		text-align: right;
+		font-size: 2.5rem;
+	}
+	p{
+		font-size: 95%;
+		line-height: 30px;
+		font-weight: 550;
+	}
+	h1 p{
+		text-align: left;
+	}
+	h2 p{
+		text-align: right;
+	}
+	h1{
+		text-align: left;
+	}
+	img{
+		align-items: left;
+	}
+	form {
+	  box-sizing: unset;
+	  padding: 2rem;
+	  border-radius: 1rem;
+	  background-color: rgba(130, 88, 72, 0.6); 
+	  display: list-item;
+	  gap: 2rem;
+	}
+	input,
+	select,
+	textarea {
+	  appearance: none;
+	  background-color: transparent;
+	  border: none;
+	  padding: 0;
+	  margin: 0;
+	  box-sizing: border-box;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="pasword"],
+	input[type="phone"],
+	select,
+	textarea {
+	  border: 2px solid #333;
+	  background-color: #dacbc4;
+	  border-radius: 0.25rem;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="pasword"],
+	select,
+	textarea {
+	  font: 1.25rem / 1.5 sans-serif;
+	  display: block;
+	  box-sizing: border-box;
+	  width: 100%;
+	  padding: 0.5rem 0.75rem;
+	}
+	input[type="submit"]{
+		display: unset;
+		height: 80%;
+		width: 50%;
+	 	box-sizing: border-box;
+	 	background-color: rgba(130, 88, 72, 0.6);
+	 	border-radius: 1rem;
+	 	border: 2px solid #333;
+	 	border-color: #dacbc4;
+	 	color: #dacbc4;
+	 	transition: all 2s;
+	}
+	input[type="submit"]:hover{
+		background: linear-gradient(to bottom, #825848 , #d2a492);
+		cursor: pointer;
+		color: black;
+		border-color: #beb0aa;
+	}
+	select{
+		background-color: #dacbc4;
+	}
+}
