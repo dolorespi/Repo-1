@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
+html{
+	background-color: #eeddd6;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2rem;
+}
+nav{
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: medium;
+
+}
+	nav ul{
+		list-style: none;
+		display: flex;
+		font-size: 1rem;
+	}
+		nav ul li{
+			list-style: none;
+			margin-right: 20px;
+			position: relative;
+		}
+			nav ul li a{
+				color: #d5b5a6;
+				text-decoration: none;
+				font-weight: 650;
+			}
+			nav ul li a:hover{
+				color: #805646;
+			}
+		nav ul ul{
+			position: absolute;
+			display: none;
+		}
+		nav ul li:hover ul{
+			display: block;
+		}
+			
+h1 img{
+	width: 100%;
+	height: 40rem;
+}
+#mostwanted h2{
+	text-align: center;
+	font-size: 2.5rem;
+}
+	#mostwanted.box{
+		width: 100%;
+		height: 100%;
+		padding: 20px 10px;
+		margin: 2.5rem 1.5rem;
+	}
+	#mostwanted .products{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+		#mostwanted .products figure{
+			text-align: center;
+		}
+		#mostwanted .products figure img{
+			width: 100%;
+			height: 70%;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+		}
+		#mostwanted .products figure figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#mostwanted .products figure p.price{
+			font-size: 1.2rem;
+		}
+
+
+.grid{
+	width: 98vw;
+	display: grid;
+	margin-top: 3rem;	
+	background-color: #c7aa9a;
+	background-size: 98vw;
+	}
+
+	.section{
+		grid-template-columns: 25% 44% 25%;
+		grid-template-areas: "img1 texto img2";
+}
+
+#img1{
+	grid-area: img1;
+	padding: 1rem 1rem 0 1rem;
+}	
+#text-center{
+	grid-area: texto;
+}
+	#text-center h2{
+		text-align: center;
+		align-items: center;
+		text-decoration: bold;
+		padding-left: 3rem;
+	}
+	#text-center p{
+		text-align: center;
+		align-items: center;
+		align-content: bottom;
+		padding: .5rem .5rem .5rem 3rem;
+	}
+#img2{
+	grid-area: img2;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.footer{
+	margin: auto;
+	padding: auto;
+	width: 100%;
+	height: 100%;
+}
+	.footer h3{
+		text-align: left;
+		font-size: 2rem;
+	}
+	.footer ul{
+		list-style: none;
+		display: flex;
+	}
+	.footer ul li{
+		list-style: none;
+	}
+	.footer ul li img{
+		text-decoration: none;
+		width: 95%;
+		height: 100%;
+	}
+
+=================NEW=============================
+#newitems{
+	width: 100%;	
+	height: 100%;
+	padding: 20px 10px;
+	margin: 2.5rem 1.5rem;
+}
+	#newitems .idem h2{
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	#newitems .face{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+		#newitems .face figure{
+			text-align: center;
+		}
+			#newitems .face figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+			#newitems .face figure figcaption{
+				font-size: 1.2rem;
+				padding: 0px 0;
+			}
+			#newitems .face figure p.price{
+				font-size: 1.2rem;
+			}
+	#newitems .lip{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+
+	}
+		#newitems .lip figure{
+			text-align: center;
+		}
+			#newitems .lip figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+			#newitems .lip figure figcaption{
+				font-size: 1.2rem;
+				padding: 0px 0;
+			}
+			#newitems .lip figure p.price{
+				font-size: 1.2rem;
+			}
+	#newitems .skincare{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+
+	}
+		#newitems .skincare figure{
+			text-align: center;
+		}
+			#newitems .skincare figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+			#newitems .skincare figure figcaption{
+				font-size: 1.2rem;
+				padding: 0px 0;
+			}
+			#newitems .skincare figure p.price{
+				font-size: 1.2rem;
+			}
+
+================shop=========================
+#shop{
+	width: 100%;	
+	height: 100%;
+	padding: 20px 10px;
+	margin: 2.5rem 1.5rem;
+}
+	#shop .link h2{
+		font-size: 2rem;
+		text-align: center;
+	}
+		#shop .link h2 a{
+			text-decoration: none;
+			color: black;
+		}
+	#shop .makeup{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+		#shop .makeup figure{
+			text-align: center;
+		}
+			#shop .makeup figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#shop .makeup figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#shop .makeup p.price{
+			font-size: 1.2rem;
+		}
+	#shop .skin-care{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+		#shop .skin-care figure{
+			text-align: center;
+		}
+			#shop .skin-care figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#shop .skin-care figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#shop .skin-care p.price{
+			font-size: 1.2rem;
+		}
+
+========================makeup=====================
+#makeup{
+	width: 100%;	
+	height: 100%;
+	padding: 20px 10px;
+	margin: 2.5rem 1.5rem;
+}
+	#makeup .item h2{
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	#makeup .foundation{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .foundation figure{
+			text-align: center;
+		}
+			#makeup .foundation figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .foundation figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .foundation p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .concealer{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .concealer figure{
+			text-align: center;
+		}
+			#makeup .concealer figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .concealer figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .concealer p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .blush{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .blush figure{
+			text-align: center;
+		}
+			#makeup .blush figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .blush figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .blush p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .contour{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .contour figure{
+			text-align: center;
+		}
+			#makeup .contour figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .contour figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .contour p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .powder{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .powder figure{
+			text-align: center;
+		}
+			#makeup .powder figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .powder figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .powder p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .lips{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .lips figure{
+			text-align: center;
+		}
+			#makeup .lips figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .lips figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .lips p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .primer{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .primer figure{
+			text-align: center;
+		}
+			#makeup .primer figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .primer figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .primer p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .brow{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .brow figure{
+			text-align: center;
+		}
+			#makeup .brow figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .brow figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .brow p.price{
+			font-size: 1.2rem;
+		}
+	#makeup .eyes{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#makeup .eyes figure{
+			text-align: center;
+		}
+			#makeup .eyes figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#makeup .eyes figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#makeup .eyes p.price{
+			font-size: 1.2rem;
+		}
+
+=======================skincare=====================
+#skincare{
+	width: 100%;	
+	height: 100%;
+	padding: 20px 10px;
+	margin: 2.5rem 1.5rem;
+}
+	#skincare .nxmes h2{
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	#skincare .cleanser{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#skincare .cleanser figure{
+			text-align: center;
+		}
+			#skincare .cleanser figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#skincare .cleanser figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#skincare .cleanser p.price{
+			font-size: 1.2rem;
+		}	
+	#skincare .serum{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#skincare .serum figure{
+			text-align: center;
+		}
+			#skincare .serum figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#skincare .serum figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#skincare .serum p.price{
+			font-size: 1.2rem;
+		}
+	#skincare .moisturizer{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#skincare .moisturizer figure{
+			text-align: center;
+		}
+			#skincare .moisturizer figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#skincare .moisturizer figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#skincare .moisturizer p.price{
+			font-size: 1.2rem;
+		}
+	#skincare .spf{
+		margin: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+		#skincare .spf figure{
+			text-align: center;
+		}
+			#skincare .spf figure img{
+				width: 100%;
+				height: 70%;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		#skincare .spf figcaption{
+			font-size: 1.2rem;
+			padding: 0px 0;
+		}
+		#skincare .spf p.price{
+			font-size: 1.2rem;
+		}
+
+===================about=======================
+h1{
+	text-align: left;
+	font-size: 3rem;
+}
+h2{
+	text-align: right;
+	font-size: 2.5rem;
+}
+p{
+	font-size: 95%;
+	line-height: 30px;
+	font-weight: 550;
+}
+h1 p{
+	text-align: left;
+}
+h2 p{
+	text-align: right;
+}
+
+=====================contacto=================
+h1{
+	text-align: left;
+}
+img{
+	align-items: left;
+}
+p{
+
+}
+form {
+  box-sizing: unset;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(130, 88, 72, 0.6); 
+  display: list-item;
+  gap: 2rem;
+}
+input,
+select,
+textarea {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input[type="text"],
+input[type="email"],
+input[type="pasword"],
+input[type="phone"],
+select,
+textarea {
+  border: 2px solid #333;
+  background-color: #dacbc4;
+  border-radius: 0.25rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="pasword"],
+select,
+textarea {
+  font: 1.25rem / 1.5 sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+}
+input[type="submit"]{
+	display: unset;
+	height: 80%;
+	width: 50%;
+ 	box-sizing: border-box;
+ 	background-color: rgba(130, 88, 72, 0.6);
+ 	border-radius: 1rem;
+ 	border: 2px solid #333;
+ 	border-color: #dacbc4;
+ 	color: #dacbc4;
+}
+select{
+	background-color: #dacbc4;
+}
